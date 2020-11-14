@@ -14,13 +14,9 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-export default function SelectInput({country,setCountry}) {
+export default function SelectInput({setCountry}) {
   const classes = useStyles();
   const [globalData, setGlobalData] = useState({});
-  const [state, setState] = React.useState({
-    age: '',
-    name: 'hai',
-  });
   useEffect(() => {
     async function getData() {
       const url = await fetch("https://corona.lmao.ninja/v2/countries?yesterday=&sort=");

@@ -7,7 +7,7 @@ function App() {
   const [country,setCountry]=useState("Global");
   return (
     <div>
-      <SearchAppBar country={country} setCountry={setCountry}/>
+      <SearchAppBar setCountry={setCountry}/>
       <Gd country={country}/>
       <Bottom />
     </div>
