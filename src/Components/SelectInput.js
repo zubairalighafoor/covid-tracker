@@ -21,14 +21,6 @@ export default function SelectInput({country,setCountry}) {
     age: '',
     name: 'hai',
   });
-
-  const handleChange = (event) => {
-    const name = event.target.name;
-    setState({
-      ...state,
-      [name]: event.target.value,
-    });
-  };
   useEffect(() => {
     async function getData() {
       const url = await fetch("https://corona.lmao.ninja/v2/countries?yesterday=&sort=");
